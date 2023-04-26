@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.mohan.controlle&apos; to &apos;com.mohan.firstboot.contro&apos;&#x0D;&#x0A;- Original project: &apos;com.spring-boot&apos;&#x0D;&#x0A;- Original element: &apos;com.spring-boot/src/main/java/com.mohan.controlle&apos;&#x0D;&#x0A;- Renamed element: &apos;com.spring-boot/src/main/java/com.mohan.firstboot.contro&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings&#x0D;&#x0A;- Rename subpackages of the package" description="Rename package &apos;com.mohan.controlle&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.mohan.controlle" name="com.mohan.firstboot.contro" qualified="false" references="true" stamp="1680936983520" textual="false" version="1.0"/>
+</session>

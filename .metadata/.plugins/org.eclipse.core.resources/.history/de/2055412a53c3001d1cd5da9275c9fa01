@@ -1,0 +1,30 @@
+package com.kuchi.spring;
+
+import java.util.List;
+
+public class menu {
+	private List<coffie> lst;
+//	private coffie cc;
+//	private coffie hc;
+//	private coffie nc;
+
+//	public menu(coffie cc, coffie hc, coffie nc) {
+//		super();
+//		this.cc = cc;
+//		this.hc = hc;
+//		this.nc = nc;
+//	}
+	public void displayMenu() {
+		for (coffie cc : lst) {
+			System.out.println(cc.getPrice()+" $ for "+cc.getType()+" coffie.");
+			
+			
+		}
+		
+//		System.out.println(cc.getPrice()+" $ for "+cc.getType()+" coffie.");
+//		System.out.println(hc.getPrice()+" $ for "+hc.getType()+" coffie.");
+//		System.out.println(nc.getPrice()+" $ for "+nc.getType()+" coffie.");
+	}
+	
+
+}

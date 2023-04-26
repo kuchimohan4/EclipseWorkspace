@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd"> -->
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+   
+   
+   <bean id="cust" class="com.assen.one.cust">
+   <property name="custCode" value="5"/>
+   <property name="custName" value="kuchi"/>
+   <property name="orderValue" value="50000"/>
+   </bean>
+   
+   <bean id="book" class="com.assen.two.books">
+   <constructor-arg value="5"/>
+   <constructor-arg value="the great king"/>
+   <constructor-arg value="mohan"/>
+   <constructor-arg  value="500"/>
+   </bean>
+   <bean id="batch1" class="com.assen.coll1.Batch">
+   <property name="id" value="1"/>
+   <property name="domain" value="science"/>
+   <property name="code" value="BGL13AJ001"/>
+   </bean>
+   <bean id="batch2" class="com.assen.coll1.Batch">
+   <property name="id" value="2"/>
+   <property name="domain" value="comput"/>
+   <property name="code" value="BGL13DN002"/>
+   </bean>
+   <bean id="batch3" class="com.assen.coll1.Batch">
+   <property name="id" value="3"/>
+   <property name="domain" value="art"/>
+   <property name="code" value="BGL13DW003"/>
+   </bean>
+   <bean id="location" class="com.assen.coll1.Location">
+   <property name="locationCode" value="jhv332n"/>
+   <property name="locationName" value="Bangalore"/>
+   <property name="batches">
+   <list>
+   <ref bean="batch1"/>
+   <ref bean="batch2"/>
+   <ref bean="batch3"/>
+   
+   </list>
+   
+   
+   </property>
+   
+   </bean>
+   <bean id="filmdirectors" class="com.assen.coll2.FilmDirectors">
+   
+   <property name="directorMap">
+   <map>
+   <entry key="rrr" value="rajamouly"/>
+   <entry key="jai balayya" value="balayya"/>
+   </map>
+   
+   </property>
+   
+   
+   
+   </bean>
+   <bean id="student" class="com.assen.auto1.Student" autowire="byName">
+   <property name="studentCode" value="4"/>
+   <property name="studentName" value="kuchi"/>
+   
+   </bean>
+   <bean id ="stuAdd" class="com.assen.auto1.Address">
+   <property name="streetName" value="8-26,airoli"/>
+   <property name="area" value="navi mumbai"/>
+   <property name="city" value="mumbai"/>
+   </bean>
+   
+   
+   
+  </beans>

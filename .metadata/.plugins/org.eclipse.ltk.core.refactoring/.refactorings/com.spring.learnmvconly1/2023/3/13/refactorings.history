@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;com.spring.learnmvconly1/src/main/webapp/WEB-INF/views/todo.jsp&apos; to &apos;add-todo.jsp&apos;" description="Rename resource &apos;todo.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/WEB-INF/views/todo.jsp" name="add-todo.jsp" stamp="1680255737657" updateReferences="true"/>
+</session>

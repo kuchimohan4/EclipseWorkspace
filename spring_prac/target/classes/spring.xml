@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd"> -->
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+<bean id="coffie1" class="com.kuchi.spring.coffie">
+<qualifier value="juce"/>
+<property name="type" value="hot"/>
+<property name="price" value="10"/>
+</bean>
+<!--
+<bean id="coffie2" class="com.kuchi.spring.coffie">
+		<property name="type" value="cold"/>
+		<property name="price" value="50"/>
+	</bean>
+
+<bean id="coffie3" class="com.kuchi.spring.coffie">
+<property name="type" value="${cc.type}"/>
+<property name="price" value="${cc.price}"/>
+</bean>
+<bean id="parentmenu" class="com.kuchi.spring.menu" abstract="true">
+<property name="cc" ref="coffie2"/>
+<property name="hc" ref="coffie1"/>
+<property name="nc" ref="coffie3"/>
+<property name="lst">
+	<list>
+		<ref bean="coffie1" />
+		<ref bean="coffie3" />
+	</list>
+</property>
+
+
+<property name="lst">
+	<list>
+		<ref bean="coffie1" />
+		<ref bean="coffie3" />
+	</list>
+</property>
+
+
+<property name="cc" ref="coffie1"/>
+<property name="hc" >
+	<bean class="com.kuchi.spring.coffie">
+		<property name="type" value="cold"/>
+		<property name="price" value="50"/>
+	</bean>
+</property>
+<property name="nc" ref="coffie3"/>
+</bean>
+<bean id="menu1" class="com.kuchi.spring.menu" parent="parentmenu">
+<property name="hc" ref="coffie1"/>
+<property name="nc" ref="coffie3"/>
+<property name="lst">
+	<list merge="true">
+		<ref bean="coffie1" />
+		<ref bean="coffie2" />
+	</list>
+</property>
+</bean>
+<bean id="menu2" class="com.kuchi.spring.menu" parent="parentmenu" >
+<property name="hc" ref="coffie1"/>
+<property name="cc" ref="coffie3"/>
+</bean>
+-->
+<!-- <bean id="rice1" class="com.kuchi.spring.coffie">
+<property name="type" value="${fr.type}"/>
+<property name="price" value="${fr.price}"/>
+</bean>
+<bean id="rice2" class="com.kuchi.spring.coffie">
+<property name="type" value="${lr.type}"/>
+<property name="price" value="${lr.price}"/>
+</bean>
+<bean id="rice3" class="com.kuchi.spring.coffie">
+<property name="type" value="${mr.type}"/>
+<property name="price" value="${mr.price}"/>
+</bean>
+
+
+
+
+
+<bean id="ricemenu" class="com.kuchi.spring.ricemenu"  >
+<property name="fr" ref="rice1"/>
+<property name="lr" ref="rice2"/>
+<property name="mr" ref="rice3"/>
+</bean> -->
+
+<bean id="jucemenu" class="com.kuchi.spring.juce">
+
+</bean>
+<!-- <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" /> -->
+
+<!-- 
+<bean id="coffie" class="com.kuchi.spring.coffie">
+<constructor-arg index="0" value="hot"/>
+<constructor-arg index="1" value="20"/>
+<property name="type" value="cold"></property>
+</bean>
+<bean id="triangle" class="com.kuchi.spring.triangle">
+<property name="type" value="parallel"/>
+</bean> -->
+
+<!-- <bean class="com.kuchi.spring.displaynamebeanpostprocesser"/> -->
+<!-- <context:component-scan base-package="com.kuchi.spring"/> -->
+<context:annotation-config/>
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+<property name="locations" value="menuconfig.properties"/>
+</bean>
+</beans>
+
+
+
+
+

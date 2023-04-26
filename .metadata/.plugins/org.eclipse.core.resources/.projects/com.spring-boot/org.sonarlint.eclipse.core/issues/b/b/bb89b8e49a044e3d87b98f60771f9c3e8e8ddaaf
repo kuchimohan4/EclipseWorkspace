@@ -1,0 +1,15 @@
+
+x	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ŸÝ¾¹HéRMINORZ
+CODE_SMELL
+b
+java:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿHêRINFOZ
+CODE_SMELL
+[
+java:S1874'"/Remove this use of "ApiInfo"; it is deprecated.(ëÑÑÇHëRMINORZ
+CODE_SMELL
+
+java:S1128"SRemove this unused import 'org.springframework.web.bind.annotation.RequestMapping'.(ö»¿ëHìRMINORZ
+CODE_SMELL
+w
+java:S1128"KRemove this unused import 'springfox.documentation.builders.PathSelectors'.(âÝ¸ñHîRMINORZ
+CODE_SMELL

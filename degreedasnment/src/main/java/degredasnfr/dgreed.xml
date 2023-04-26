@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd"> -->
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+   <bean id="address" class="com.asnmnt.one.Address">
+   <property name="street" value="kucghi"/>
+   <property name="city" value="tpt"/>
+   <property name="state" value="ap"/>
+   <property name="zip" value="517236"/>
+   <property name="country" value="akhand barat"/>
+   </bean>
+     <bean id="customer" class="com.asnmnt.one.Customer">
+   <property name="customerId" value="kucghi"/>
+   <property name="customerName" value="tpt"/>
+   <property name="customerContact" value="ap"/>
+   <property name="customerAddress" ref="address"/>
+   </bean>
+   
+   
+   <!-- bank accout system -->
+   
+   <bean id="bankaccount" class="degredasnfr.BankAccount">
+   
+   
+   </bean>
+   
+   
+   
+   </beans>
